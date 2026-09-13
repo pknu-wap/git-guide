@@ -30,15 +30,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-      - name: Set up Node
-        uses: actions/setup-node@v7
+      - name: Install pnpm
+        uses: pnpm/setup@v2
         with:
-          node-version: lts/*
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm ci
+          runtime: node@lts
+          cache: true
       - name: Build
-        run: npm run build
+        run: pnpm run build
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
