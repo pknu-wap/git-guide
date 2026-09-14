@@ -5,5 +5,5 @@ export default function Icon({ name }: { name: 'folder' | 'user' | 'clock' | 'in
     clock: 'M12 8v4l3 2M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z',
     info: 'M12 11v6m0-10h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z',
   }
-  return <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[name]} /></svg>
+  return <svg className="size-[18px] flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[name]} /></svg>
 }
