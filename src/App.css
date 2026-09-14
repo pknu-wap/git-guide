@@ -1,0 +1,88 @@
+:root {
+  font-family: Pretendard, 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #202923;
+  background: #f7f7f5;
+  font-size: 15px;
+  line-height: 1.8;
+  color-scheme: light;
+  --forest: #1a3c2b;
+  --muted: #69716b;
+  --border: #dfe4de;
+  --pale-green: #edf3ed;
+}
+* { box-sizing: border-box; }
+body, h1, h2, h3, p, figure { margin: 0; }
+a { color: inherit; text-underline-offset: 4px; }
+a:hover { color: var(--forest); }
+a:focus-visible { outline: 3px solid var(--forest); outline-offset: 5px; }
+section, main { scroll-margin-top: 90px; }
+.icon { width: 18px; height: 18px; flex: 0 0 auto; }
+.skip-link { position: fixed; top: -100px; left: 16px; padding: 12px 20px; background: white; z-index: 100; }
+.skip-link:focus { top: 12px; }
+.sidebar { position: fixed; inset: 0 auto 0 0; width: 224px; background: white; border-right: 1px solid var(--border); overflow-y: auto; }
+.sidebar nav { padding: 16px; }
+.nav-label { padding: 8px 12px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.sidebar a { display: flex; align-items: center; gap: 12px; padding: 8px 12px; margin-bottom: 4px; border-radius: 6px; text-decoration: none; color: var(--muted); }
+.sidebar a:hover, .sidebar .nav-active { background: var(--pale-green); color: var(--forest); }
+.sidebar .nav-active { font-weight: 600; }
+.resources { padding-top: 24px; }
+.sidebar a:last-child { justify-content: space-between; font-size: 14px; }
+main { margin-left: 224px; min-width: 0; }
+.topbar { position: sticky; top: 0; z-index: 10; background: #fffffff2; border-bottom: 1px solid var(--border); padding: 16px 48px; display: flex; justify-content: space-between; align-items: center; gap: 20px; backdrop-filter: blur(8px); }
+.breadcrumb { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); }
+.breadcrumb a, .github-link { text-decoration: none; }
+.current, .github-link { color: var(--forest); font-weight: 500; }
+.github-link { white-space: nowrap; font-size: 13px; }
+.page { max-width: 1100px; margin: auto; padding: 64px 48px; }
+.hero { margin-bottom: 48px; }
+.chapter { display: inline-block; padding: 2px 8px; border-radius: 6px; background: var(--pale-green); color: var(--forest); font-size: 12px; font-weight: 700; margin-bottom: 16px; }
+h1 { font-size: 40px; line-height: 1.35; color: var(--forest); letter-spacing: -.04em; margin-bottom: 16px; word-break: keep-all; }
+.metadata { display: flex; gap: 16px; color: var(--muted); font-size: 12px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+.metadata span { display: flex; gap: 6px; align-items: center; }
+.metadata .icon { width: 14px; height: 14px; }
+.intro { margin-top: 32px; max-width: 672px; font-size: 18px; color: var(--muted); word-break: keep-all; }
+.preparation { display: flex; gap: 16px; background: white; border-left: 4px solid var(--forest); padding: 24px; border-radius: 6px; margin-bottom: 48px; }
+.preparation .icon { width: 20px; height: 20px; margin-top: 5px; color: var(--forest); }
+.preparation h2, .preparation h3 { font-size: 15px; color: var(--forest); margin-bottom: 4px; }
+.preparation p, .instructions { color: var(--muted); }
+.lesson-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 48px; align-items: start; }
+.instructions section + section { margin-top: 48px; }
+.step-title { display: flex; align-items: center; gap: 12px; font-size: 24px; line-height: 1.4; color: #202923; margin-bottom: 16px; word-break: keep-all; }
+.step-number { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex: 0 0 32px; border-radius: 50%; background: var(--forest); color: white; font-size: 14px; }
+.instructions ul { padding-left: 18px; margin: 16px 0 0; }
+.instructions li + li { margin-top: 16px; }
+.instructions li::marker { color: var(--forest); }
+code { background: var(--pale-green); color: var(--forest); padding: 0 4px; border-radius: 3px; font-size: .94em; overflow-wrap: anywhere; }
+.note { margin-top: 16px; margin-bottom: 0; }
+.preparation > div { min-width: 0; }
+.screenshot { position: sticky; top: 96px; padding: 8px; background: white; border: 1px solid var(--border); border-radius: 6px; min-width: 0; }
+.image-link { display: block; border-radius: 4px; }
+.screenshot img { display: block; width: 100%; height: auto; border-radius: 4px; }
+figcaption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 16px; padding: 12px 8px; border-top: 1px solid var(--border); font-size: 12px; }
+figcaption > span { color: var(--muted); font-style: italic; }
+figcaption a { color: var(--forest); text-decoration: none; }
+.button { display: inline-block; margin-top: 16px; background: var(--forest); color: white; border-radius: 6px; padding: 12px 24px; font-weight: 700; text-align: center; text-decoration: none; flex-shrink: 0; }
+.button:hover { color: white; background: #28543d; }
+@media (max-width: 1100px) {
+  .lesson-grid { grid-template-columns: 1fr; }
+  .screenshot { position: static; grid-row: 1; }
+}
+@media (max-width: 767px) {
+  .sidebar { position: static; width: auto; border-right: 0; border-bottom: 1px solid var(--border); }
+  .sidebar nav { display: flex; flex-wrap: wrap; gap: 4px; }
+  .nav-label { width: 100%; }
+  .sidebar a { font-size: 13px; padding: 8px; margin: 0; }
+  .resources, .sidebar a:last-child { display: none; }
+  main { margin-left: 0; }
+  .topbar { padding: 16px 24px; }
+  .page { padding: 40px 24px; }
+  h1 { font-size: 32px; }
+  .intro { font-size: 16px; }
+  .preparation { padding: 20px; }
+  .step-title { font-size: 22px; }
+  .button { width: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+.team-section { margin-top: 64px; }
+.team-section .screenshot { position: static; margin-top: 24px; }
