@@ -15,7 +15,7 @@ import {
 } from '../components/Guide'
 export default function ReviewGuide() {
   return (
-    <GuidePage><GuideHeader title="PR 리뷰 주고받기" audience="팀장 · 팀원" duration="약 15분">리뷰는 변경의 목적과 동작을 팀원이 함께 확인하는 과정입니다. README에 실행 방법을 추가하는 PR을 예로, 리뷰 요청부터 피드백 반영과 승인까지 주고받아봅시다.</GuideHeader><Callout id="review-preparation" title="시작 전 준비사항"><p>작업 브랜치를 Push하고 PR을 열어두세요. 작성자와 리뷰어를 나누어 서로 다른 계정으로 진행합니다. 자신의 PR에는 승인이나 수정 요청 리뷰를 제출할 수 없습니다.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title="PR 리뷰 주고받기" duration="약 15분">리뷰는 변경의 목적과 동작을 팀원이 함께 확인하는 과정입니다. README에 실행 방법을 추가하는 PR을 예로, 리뷰 요청부터 피드백 반영과 승인까지 주고받아봅시다.</GuideHeader><Callout id="review-preparation" title="시작 전 준비사항"><p>작업 브랜치를 Push하고 PR을 열어두세요. 작성자와 리뷰어를 나누어 서로 다른 계정으로 진행합니다. 자신의 PR에는 승인이나 수정 요청 리뷰를 제출할 수 없습니다.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>작성자 · 리뷰할 내용 준비하기</StepTitle>
           <p>PR의 base가 팀의 기준 브랜치인지, compare가 내 작업 브랜치인지 확인하세요. 리뷰어가 이해하고 확인할 수 있도록 본문에 변경 이유와 검증 방법을 적습니다.</p>
           <CommandBlock>{`## 변경 목적

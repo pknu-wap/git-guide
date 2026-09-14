@@ -15,7 +15,7 @@ import {
 } from '../components/Guide'
 export default function ConflictGuide() {
   return (
-    <GuidePage><GuideHeader title="충돌 해결하기" audience="팀장 · 팀원" duration="약 15분">같은 파일의 같은 줄을 서로 다르게 수정하면 Git이 어느 내용을 남길지 결정하지 못할 수 있습니다. 두 브랜치에서 충돌을 직접 만들고, 변경 의도를 살려 합치는 과정을 GitHub Desktop으로 연습해봅시다.</GuideHeader><Callout id="conflict-preparation" title="시작 전 준비사항"><p>GitHub Desktop에서 <strong>File → New Repository</strong>로 README를 포함한 별도 연습 레포지토리를 만드세요. 에디터도 준비합니다. 이 실습은 내 컴퓨터에서 진행할 수 있으며 Publish할 필요가 없습니다.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title="충돌 해결하기" duration="약 15분">같은 파일의 같은 줄을 서로 다르게 수정하면 Git이 어느 내용을 남길지 결정하지 못할 수 있습니다. 두 브랜치에서 충돌을 직접 만들고, 변경 의도를 살려 합치는 과정을 GitHub Desktop으로 연습해봅시다.</GuideHeader><Callout id="conflict-preparation" title="시작 전 준비사항"><p>GitHub Desktop에서 <strong>File → New Repository</strong>로 README를 포함한 별도 연습 레포지토리를 만드세요. 에디터도 준비합니다. 이 실습은 내 컴퓨터에서 진행할 수 있으며 Publish할 필요가 없습니다.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>공통 시작점 만들기</StepTitle>
           <p>새 레포지토리에서 <strong>Current Branch → New Branch</strong>로 <code>practice/base</code>를 만드세요. README 내용을 아래 한 줄로 바꾸고 저장한 뒤 Commit합니다.</p>
           <CommandBlock>모임: 금요일</CommandBlock>

@@ -13,7 +13,7 @@ import {
 } from '../components/Guide'
 export default function GhGuide() {
   return (
-    <GuidePage><GuideHeader title="GitHub CLI(gh) 사용하기" audience="팀장 · 팀원" duration="약 10분">GitHub CLI는 터미널에서 GitHub의 기능을 사용하는 공식 도구입니다. <code>gh</code>명령어로 이슈를 확인하고 Pull Request를 만들어봅시다. 앞에서 배운 GitHub Desktop과 함께 사용할 수 있습니다.</GuideHeader><Callout id="gh-preparation" title="시작 전 준비사항"><p>팀 레포지토리에 접근할 수 있는 GitHub 계정과 터미널을 준비하세요. GitHub Desktop에 로그인했어도 gh에서는 별도로 로그인해야 합니다. 명령어는 한 줄씩 입력하고 Enter를 누르세요.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title="GitHub CLI(gh) 사용하기" duration="약 10분">GitHub CLI는 터미널에서 GitHub의 기능을 사용하는 공식 도구입니다. <code>gh</code>명령어로 이슈를 확인하고 Pull Request를 만들어봅시다. 앞에서 배운 GitHub Desktop과 함께 사용할 수 있습니다.</GuideHeader><Callout id="gh-preparation" title="시작 전 준비사항"><p>팀 레포지토리에 접근할 수 있는 GitHub 계정과 터미널을 준비하세요. GitHub Desktop에 로그인했어도 gh에서는 별도로 로그인해야 합니다. 명령어는 한 줄씩 입력하고 Enter를 누르세요.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>gh 설치하기</StepTitle>
           <p>운영체제에 맞는 명령어를 실행하세요. macOS 명령어는 Homebrew가 설치되어 있어야 합니다.</p>
           <ConceptGrid><div><h3>macOS · Homebrew</h3><CommandBlock>brew install gh</CommandBlock></div><div><h3>Windows · PowerShell</h3><CommandBlock>winget install --id GitHub.cli</CommandBlock></div></ConceptGrid>

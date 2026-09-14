@@ -15,7 +15,7 @@ import ExternalLink from '../components/ExternalLink'
 
 export default function UndoGuide() {
   return (
-    <GuidePage><GuideHeader title="실수한 변경 되돌리기" audience="팀장 · 팀원" duration="약 20분">파일 수정만 취소할지, Commit의 효과를 취소할지, Commit을 다시 구성할지에 따라 도구가 달라집니다. Discard Changes, Revert Changes in Commit, Reset의 차이와 사용 순서를 알아봅시다.</GuideHeader><Callout id="undo-preparation" title="시작 전 준비사항"><p>별도 연습 레포지토리의 README로 진행하세요. 현재 브랜치와 Commit·Push 여부를 확인하고, 남길 수정은 파일 복사나 Stash로 보관합니다. Revert와 Reset 실습은 진행 중인 다른 변경이 없는 상태에서 시작하세요.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title="실수한 변경 되돌리기" duration="약 20분">파일 수정만 취소할지, Commit의 효과를 취소할지, Commit을 다시 구성할지에 따라 도구가 달라집니다. Discard Changes, Revert Changes in Commit, Reset의 차이와 사용 순서를 알아봅시다.</GuideHeader><Callout id="undo-preparation" title="시작 전 준비사항"><p>별도 연습 레포지토리의 README로 진행하세요. 현재 브랜치와 Commit·Push 여부를 확인하고, 남길 수정은 파일 복사나 Stash로 보관합니다. Revert와 Reset 실습은 진행 중인 다른 변경이 없는 상태에서 시작하세요.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>현재 상태에 맞는 방법 고르기</StepTitle>
           <p>GitHub Desktop의 <strong>Changes</strong>에서 미커밋 변경을, <strong>History</strong>에서 Commit을 확인하세요. 원격과 비교할 때는 먼저 Fetch하고 GitHub에서도 해당 Commit이 공유됐는지 확인합니다.</p>
           <GuideTable label="되돌리기 방법 비교"><thead><tr><th scope="col">상황</th><th scope="col">방법</th><th scope="col">결과</th></tr></thead><tbody>

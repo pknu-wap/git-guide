@@ -13,7 +13,7 @@ import {
 } from '../components/Guide'
 export default function DevelopmentGuide() {
   return (
-    <GuidePage><GuideHeader title="Git으로 함께 개발하기" audience="팀장 · 팀원" duration="약 15분">코드를 수정하고, 변경 이력을 남기고, 팀원의 작업과 합치는 과정을 알아봅시다.</GuideHeader><Callout id="development-preparation" title="시작 전 준비사항"><p>앞 가이드에서 팀의 레포지토리를 복제하고 GitHub Desktop에서 열어두세요. 팀에서 작업을 합치는 Default 브랜치가 무엇인지 확인합니다.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title="Git으로 함께 개발하기" duration="약 15분">코드를 수정하고, 변경 이력을 남기고, 팀원의 작업과 합치는 과정을 알아봅시다.</GuideHeader><Callout id="development-preparation" title="시작 전 준비사항"><p>앞 가이드에서 팀의 레포지토리를 복제하고 GitHub Desktop에서 열어두세요. 팀에서 작업을 합치는 Default 브랜치가 무엇인지 확인합니다.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>Git과 GitHub 이해하기</StepTitle>
           <p><strong>Git</strong>은 파일의 변경 이력을 기록하고 여러 작업을 합치는 버전 관리 도구입니다. <strong>GitHub</strong>는 레포지토리를 온라인에서 공유하고 코드 리뷰를 진행하는 서비스이며, <strong>GitHub Desktop</strong>은 Git 작업을 버튼으로 실행하는 앱입니다.</p>
           <ConceptGrid><div><h3>내 컴퓨터 · Git</h3><p>파일을 수정하고 Commit을 만드는 곳입니다. 인터넷 연결 없이도 변경 이력을 기록할 수 있습니다.</p></div><div><h3>원격 · GitHub</h3><p>Push와 Pull을 사용하여 팀원들과 Commit을 공유하는 곳입니다.</p></div></ConceptGrid>
