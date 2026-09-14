@@ -8,6 +8,7 @@ import {
   GuideQuestion,
   GuideBody,
   ButtonLink,
+  GuideNavigation,
   GuidePage,
   GuideScreenshot,
 } from '../components/Guide'
@@ -86,6 +87,6 @@ export default function DevelopmentGuide() {
           <p><strong>History</strong>에서는 Commit별 작성자, 메시지와 Diff를 확인할 수 있습니다. 이미 공유한 Commit을 취소해야 한다면 <strong>Revert</strong>로 반대 변경을 담은 새 Commit을 만드는 방법이 있습니다. 이후 변경에 따라 충돌이 생길 수 있으니 결과를 확인하세요.</p>
           <GuideQuestion summary="잠시 다른 작업을 해야 한다면?"><p><strong>Stash</strong>는 아직 Commit하지 않은 변경을 잠시 보관하는 기능입니다. 다른 작업을 마친 뒤 복원할 수 있으며, 복원 과정에서 충돌이 생길 수도 있습니다.</p></GuideQuestion>
           <GuideQuestion summary="추적하지 않을 파일은 어떻게 정하나요?"><p><code>.gitignore</code>에 빌드 결과물이나 로컬 설정 파일의 패턴을 적으면 아직 추적하지 않는 파일을 Git이 무시합니다. 이미 Commit한 파일에는 소급 적용되지 않습니다. 비밀번호나 API 키는 Commit에 포함하지 마세요.</p></GuideQuestion>
-        </section></GuideBody><ButtonLink href="?guide=clone" spacing="standalone">← 이전 가이드: 팀의 레포지토리 복제하기</ButtonLink></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=clone">← 이전 가이드: 팀의 레포지토리 복제하기</a><ButtonLink href="?guide=gitlab-flow" spacing="navigation">다음 가이드: GitLab Flow 이해하기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

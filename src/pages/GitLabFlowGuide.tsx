@@ -64,6 +64,6 @@ export default function GitLabFlowGuide() {
           </ul>
           <Example>작성 예시: main에서 작업 브랜치 생성 → 팀원 1명 리뷰와 테스트 통과 → main에 Merge → 배포 담당자가 후보 Commit 확인 후 배포</Example>
           <GuideQuestion summary="Git Flow와 같은 방식인가요?"><p>전통적인 Git Flow는 main과 develop을 나누고 release·hotfix 브랜치를 활용합니다. GitLab Flow는 main 중심으로 기능을 통합하고 배포 요구에 맞게 확장합니다. develop이라는 이름 하나만으로 팀의 전략이 정해지는 것은 아니며, 실제 병합 방향과 브랜치 역할이 중요합니다.</p></GuideQuestion>
-        </section></GuideBody><GuideNavigation><a href="?guide=conflict">← 이전 가이드: 충돌 해결하기</a><ButtonLink href="?guide=gitignore" spacing="navigation">다음 가이드: .gitignore 사용하기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=develop">← 이전 가이드: Git으로 함께 개발하기</a><ButtonLink href="?guide=review" spacing="navigation">다음 가이드: PR 리뷰 주고받기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

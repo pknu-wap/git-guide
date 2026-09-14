@@ -71,6 +71,6 @@ README 순서대로 설치한 뒤 개발 서버가 열리는지 확인해주세�
           <p>Merge가 끝나면 GitHub Desktop에서 기준 브랜치로 돌아와 Fetch·Pull하세요. 충돌이 있다면 <a href="?guide=conflict">충돌 해결하기</a>를 참고합니다.</p>
           <GuideQuestion summary="연습은 어떻게 마무리하나요?"><p>README PR 하나에서 리뷰어가 수정 요청 → 작성자가 같은 브랜치에 수정 Push → 리뷰어가 재확인 후 승인하는 흐름을 완료하세요. 다음 PR에서는 역할을 바꾸면 양쪽 과정을 모두 익힐 수 있습니다.</p></GuideQuestion>
           <ReadingLinks>공식 문서: <a href="https://docs.github.com/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request" target="_blank" rel="noopener noreferrer">리뷰 작성과 제출</a>· <a href="https://docs.github.com/en/pull-requests/how-tos/review-pull-requests/incorporating-feedback-in-your-pull-request" target="_blank" rel="noopener noreferrer">피드백 반영하기</a></ReadingLinks>
-        </section></GuideBody><GuideNavigation><a href="?guide=gitignore">← 이전 가이드: .gitignore 사용하기</a><ButtonLink href="?guide=undo" spacing="navigation">다음 가이드: 실수한 변경 되돌리기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=gitlab-flow">← 이전 가이드: GitLab Flow 이해하기</a><ButtonLink href="?guide=conflict" spacing="navigation">다음 가이드: 충돌 해결하기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

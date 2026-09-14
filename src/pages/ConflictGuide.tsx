@@ -56,6 +56,6 @@ export default function ConflictGuide() {
           <p>기준 브랜치를 작업 브랜치로 가져와 충돌을 해결한 뒤, 작업 브랜치를 Push합니다. 기준 브랜치에 작업을 최종 반영하는 것은 PR 리뷰 후 별도로 진행하세요.</p>
           <GuideQuestion summary="이미지 파일이나 삭제된 파일에서 충돌한다면?"><p>이미지 같은 바이너리 파일은 텍스트처럼 합칠 수 없으므로 남길 버전을 팀원과 결정하세요. 한쪽에서 삭제하고 다른 쪽에서 수정한 파일은 파일을 유지할지 삭제할지 결정해야 합니다.</p></GuideQuestion>
           <ReadingLinks>공식 문서: <a href="https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/syncing-your-branch-in-github-desktop" target="_blank" rel="noopener noreferrer">GitHub Desktop에서 브랜치 합치기</a>· <a href="https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line" target="_blank" rel="noopener noreferrer">충돌 표시와 해결 방법</a></ReadingLinks>
-        </section></GuideBody><GuideNavigation><a href="?guide=gh">← 이전 가이드: GitHub CLI(gh) 사용하기</a><ButtonLink href="?guide=gitlab-flow" spacing="navigation">다음 가이드: GitLab Flow 이해하기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=review">← 이전 가이드: PR 리뷰 주고받기</a><ButtonLink href="?guide=undo" spacing="navigation">다음 가이드: 실수한 변경 되돌리기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

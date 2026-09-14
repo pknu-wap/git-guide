@@ -65,6 +65,6 @@ gh pr view 2 --web`}</CommandBlock>
           <p>자동 검사가 설정되지 않은 PR에는 검사 결과가 없을 수 있습니다. 마지막 명령어로 브라우저를 열어 팀원에게 리뷰를 요청하고, 승인과 필요한 검사를 확인한 뒤 팀 규칙에 따라 Merge하세요. 이후 GitHub Desktop에서 기준 브랜치로 돌아와 Fetch·Pull합니다.</p>
           <GuideQuestion summary="레포지토리를 찾을 수 없다고 나오나요?"><p>터미널이 팀 레포지토리 폴더에 있는지, <code>gh auth status</code>에 올바른 계정이 표시되는지 확인하세요. 팀의 접근 권한도 필요합니다. 다른 폴더에서 조회하려면 <code>gh issue list --repo pknu-wap/team-repo</code>처럼 레포지토리를 직접 지정할 수 있습니다.</p></GuideQuestion>
           <ReadingLinks>더 알아보기: <a href="https://cli.github.com/manual/" target="_blank" rel="noopener noreferrer">GitHub CLI 공식 매뉴얼</a>· <a href="https://cli.github.com/manual/gh_auth_login" target="_blank" rel="noopener noreferrer">로그인 안내</a></ReadingLinks>
-        </section></GuideBody><GuideNavigation><a href="?guide=develop">← 이전 가이드: Git으로 함께 개발하기</a><ButtonLink href="?guide=conflict" spacing="navigation">다음 가이드: 충돌 해결하기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=gitignore">← 이전 가이드: .gitignore 사용하기</a></GuideNavigation></GuidePage>
   )
 }
