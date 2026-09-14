@@ -39,13 +39,13 @@ export function StepTitle({ number, id, children }: ContentProps & { number: num
   )
 }
 
-export function Callout({ id, title, kind = 'preparation', icon = false, children }: ContentProps & {
-  id: string; title: string; kind?: 'preparation' | 'note'; icon?: boolean
+export function Callout({ id, title, kind = 'preparation', children }: ContentProps & {
+  id: string; title: string; kind?: 'preparation' | 'note'
 }) {
   const Heading = kind === 'preparation' ? 'h2' : 'h3'
   return (
     <aside aria-labelledby={id} className={`flex gap-4 rounded-[6px] border-l-4 border-(--forest) bg-white p-6 max-[768px]:p-5 [&_p]:text-(--muted) ${kind === 'preparation' ? 'mb-12' : 'mt-4 mb-0'}`}>
-      {icon && <Icon name="info" className="mt-[5px] size-5 text-(--forest)" />}
+      <Icon name="info" className="mt-[5px] size-5 text-(--forest)" />
       <div className="min-w-0">
         <Heading id={id} className="mb-1 text-[15px] text-(--forest)">{title}</Heading>
         {children}
