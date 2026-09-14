@@ -15,6 +15,7 @@ export default function App() {
     <div>
       <a className="fixed -top-[100px] left-4 z-[100] bg-white px-5 py-3 focus:top-3" href="#content">본문으로 바로가기</a>
       <aside className="fixed inset-y-0 left-0 w-[224px] overflow-y-auto border-r border-(--border) bg-white max-[768px]:static max-[768px]:w-auto max-[768px]:border-r-0 max-[768px]:border-b [&_nav]:p-4 max-[768px]:[&_nav]:flex max-[768px]:[&_nav]:flex-wrap max-[768px]:[&_nav]:gap-1 [&_a]:mb-1 [&_a]:flex [&_a]:items-center [&_a]:gap-3 [&_a]:rounded-[6px] [&_a]:px-3 [&_a]:py-2 [&_a]:text-(--muted) [&_a]:no-underline [&_a:hover]:bg-(--pale-green) [&_a:hover]:text-(--forest) [&_a[aria-current=page]]:bg-(--pale-green) [&_a[aria-current=page]]:text-(--forest) [&_a[aria-current=page]]:font-semibold max-[768px]:[&_a]:m-0 max-[768px]:[&_a]:p-2 max-[768px]:[&_a]:text-[13px]">
+        <p className="px-7 pt-6 pb-2 text-[24px] font-bold tracking-tight text-(--forest)">Git Guide</p>
         <nav aria-label="학습 목차">
           {chapters.map((chapter, index) => (
             <Fragment key={chapter.number}>
