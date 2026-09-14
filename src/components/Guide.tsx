@@ -8,15 +8,15 @@ export function GuidePage({ children }: ContentProps) {
   return <div className="mx-auto max-w-[1100px] px-12 py-16 max-[768px]:px-6 max-[768px]:py-10">{children}</div>
 }
 
-export function GuideHeader({ title, audience, duration, icons = false, children }: ContentProps & {
-  title: string; audience: string; duration: string; icons?: boolean
+export function GuideHeader({ title, audience, duration, children }: ContentProps & {
+  title: string; audience: string; duration: string
 }) {
   return (
     <section className="mb-12" aria-labelledby="page-title">
       <h1 id="page-title" className="mb-4 text-[40px] leading-[1.35] tracking-[-0.04em] break-keep text-(--forest) max-[768px]:text-[32px]">{title}</h1>
       <div className="flex gap-4 border-b border-(--border) pb-8 text-[12px] text-(--muted)">
-        <span className="flex items-center gap-[6px]">{icons && <Icon name="user" className="size-[14px]" />}대상: {audience}</span>
-        <span className="flex items-center gap-[6px]">{icons && <Icon name="clock" className="size-[14px]" />}소요 시간: {duration}</span>
+        <span className="flex items-center gap-[6px]"><Icon name="user" className="size-[14px]" />대상: {audience}</span>
+        <span className="flex items-center gap-[6px]"><Icon name="clock" className="size-[14px]" />소요 시간: {duration}</span>
       </div>
       <p className="mt-8 max-w-[672px] text-[18px] break-keep text-(--muted) max-[768px]:text-[16px]">{children}</p>
     </section>

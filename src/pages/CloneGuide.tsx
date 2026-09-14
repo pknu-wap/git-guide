@@ -13,7 +13,7 @@ import ExternalLink from '../components/ExternalLink'
 
 export default function CloneGuide() {
   return (
-    <GuidePage><GuideHeader title="팀의 레포지토리 복제하기" audience="팀장 · 팀원" duration="약 5분" icons>팀의 레포지토리를 내 컴퓨터로 가져와 개발을 시작해봅시다. GitHub Desktop의 Clone 기능으로 코드와 변경 이력을 복제할 수 있습니다. 모든 팀원이 각자의 컴퓨터에서 진행하세요.</GuideHeader><Callout id="clone-preparation-title" title="시작 전 준비사항"><p><ExternalLink href="https://desktop.github.com/">GitHub Desktop</ExternalLink>을 설치하고 본인의 GitHub 계정으로 로그인하세요. 팀장이 만든 레포지토리의 이름과 접근 권한을 확인해주세요.</p></Callout><LessonGrid><GuideBody><section>
+    <GuidePage><GuideHeader title="팀의 레포지토리 복제하기" audience="팀장 · 팀원" duration="약 5분">팀의 레포지토리를 내 컴퓨터로 가져와 개발을 시작해봅시다. GitHub Desktop의 Clone 기능으로 코드와 변경 이력을 복제할 수 있습니다. 모든 팀원이 각자의 컴퓨터에서 진행하세요.</GuideHeader><Callout id="clone-preparation-title" title="시작 전 준비사항"><p><ExternalLink href="https://desktop.github.com/">GitHub Desktop</ExternalLink>을 설치하고 본인의 GitHub 계정으로 로그인하세요. 팀장이 만든 레포지토리의 이름과 접근 권한을 확인해주세요.</p></Callout><LessonGrid><GuideBody><section>
             <StepTitle number={1}>복제 화면 열기</StepTitle>
             <p>GitHub Desktop을 실행하고 상단 메뉴에서 <strong>File → Clone Repository…(Ctrl + Shift + O)</strong>를 선택하세요.<strong>Clone a Repository</strong> 창에서 <strong>GitHub.com</strong> 탭을 선택합니다.</p>
           </section><section>
