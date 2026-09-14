@@ -35,7 +35,6 @@ main { margin-left: 224px; min-width: 0; }
 .github-link { white-space: nowrap; font-size: 13px; }
 .page { max-width: 1100px; margin: auto; padding: 64px 48px; }
 .hero { margin-bottom: 48px; }
-.chapter { display: inline-block; padding: 2px 8px; border-radius: 6px; background: var(--pale-green); color: var(--forest); font-size: 12px; font-weight: 700; margin-bottom: 16px; }
 h1 { font-size: 40px; line-height: 1.35; color: var(--forest); letter-spacing: -.04em; margin-bottom: 16px; word-break: keep-all; }
 .metadata { display: flex; gap: 16px; color: var(--muted); font-size: 12px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
 .metadata span { display: flex; gap: 6px; align-items: center; }
@@ -86,3 +85,47 @@ figcaption a { color: var(--forest); text-decoration: none; }
 
 .team-section { margin-top: 64px; }
 .team-section .screenshot { position: static; margin-top: 24px; }
+
+.guide-next { margin-top: 48px; }
+
+.chapter-label { margin-top: 24px; }
+.guide-navigation { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; margin-top: 48px; }
+.guide-navigation .button { margin-top: 0; }
+.development-guide .instructions { max-width: 850px; }
+.development-guide .instructions section > p + p { margin-top: 16px; }
+.concept-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 24px 0; }
+.concept-grid > div { border: 1px solid var(--border); border-radius: 6px; padding: 24px; background: white; }
+.concept-grid h3 { color: var(--forest); font-size: 16px; margin-bottom: 8px; }
+.git-flow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0; margin: 24px 0; list-style: none; border: 1px solid var(--border); border-radius: 6px; background: white; }
+.git-flow li { padding: 16px; }
+.instructions .git-flow li + li { margin-top: 0; border-left: 1px solid var(--border); }
+.git-flow strong, .git-flow span { display: block; }
+.git-flow strong { color: var(--forest); }
+.git-flow span { font-size: 12px; }
+.term-list { margin: 24px 0; }
+.term-list > div { display: grid; grid-template-columns: 80px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--border); }
+.term-list dt { font-weight: 700; color: var(--forest); }
+.term-list dd { margin: 0; }
+.example { margin-top: 24px; padding: 16px; background: var(--pale-green); color: var(--forest); border-radius: 6px; }
+.git-question { margin-top: 16px; padding: 16px 20px; border: 1px solid var(--border); border-radius: 6px; background: white; }
+.git-question summary { cursor: pointer; color: var(--forest); font-weight: 600; }
+.git-question summary:focus-visible { outline: 3px solid var(--forest); outline-offset: 5px; }
+.git-question p { margin-top: 12px; }
+.reading-links { margin-top: 24px; font-size: 13px; }
+@media (max-width: 767px) {
+  .concept-grid { grid-template-columns: 1fr; }
+  .git-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .instructions .git-flow li:nth-child(3) { border-left: 0; }
+  .git-flow li:nth-child(n+3) { border-top: 1px solid var(--border); }
+}
+
+.inline-screenshot { position: static; margin-top: 24px; }
+
+.command-block { margin: 16px 0; padding: 16px; border: 1px solid var(--border); border-radius: 6px; background: var(--pale-green); white-space: pre-wrap; overflow-wrap: anywhere; }
+.command-block code { padding: 0; }
+
+.table-scroll { overflow-x: auto; margin: 24px 0; }
+.table-scroll:focus-visible { outline: 3px solid var(--forest); outline-offset: 5px; }
+.guide-table { width: 100%; min-width: 520px; border-collapse: collapse; background: white; }
+.guide-table th, .guide-table td { padding: 16px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+.guide-table th { background: var(--pale-green); color: var(--forest); }
