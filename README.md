@@ -1,54 +1,26 @@
 # Git 협업 가이드
 
-React와 TypeScript로 만든 한국어 Git·GitHub 학습 사이트입니다.
+팀 프로젝트에서 Git과 GitHub로 협업하여 개발하는 과정을 안내하는 학습 사이트입니다. 팀의 저장소를 준비하고, 각자의 변경을 기록·공유한 뒤, 리뷰를 거쳐 하나로 합치는 흐름을 다룹니다. pknu-wap 팀 프로젝트를 시작하는 팀장과 팀원을 대상으로 합니다.
 
-## 실행과 검증
+## 다루는 내용
 
-```sh
-pnpm install
-pnpm dev
-```
+### 1. 시작하기
 
-```sh
-pnpm build
-pnpm lint
-pnpm test
-```
+| 가이드 | 배울 내용 |
+| --- | --- |
+| 팀의 레포지토리 만들기 | 팀장이 공동 저장소를 만들고 팀원에게 접근 권한과 주소를 공유하는 과정 |
+| 팀의 레포지토리 복제하기 | 팀원이 코드와 변경 이력을 자신의 컴퓨터로 가져와 개발을 준비하는 과정 |
 
-테스트는 전체 가이드의 렌더링, 현재 목차 표시, 이전·다음 링크, 기본 페이지와 이미지 경로를 확인합니다.
+### 2. 개발하기
 
-## 파일 구조
+| 가이드 | 배울 내용 |
+| --- | --- |
+| Git으로 함께 개발하기 | 최신 코드 가져오기부터 브랜치, 변경 확인, Commit, Push, PR, Merge까지의 기본 협업 흐름 |
+| GitHub CLI(gh) 사용하기 | 터미널에서 이슈를 확인·생성하고 PR을 만들거나 상태를 확인하는 방법 |
+| 충돌 해결하기 | 두 브랜치의 변경이 충돌하는 상황을 이해하고 양쪽 의도를 살려 합치는 연습 |
+| GitLab Flow 이해하기 | 작업 브랜치와 main의 관계, 리뷰와 배포를 연결하는 브랜치 전략 |
+| .gitignore 사용하기 | 팀과 공유할 파일과 제외할 파일을 구분하고, 이미 커밋한 파일의 추적을 해제하는 방법 |
+| PR 리뷰 주고받기 | 작성자와 리뷰어가 변경 목적을 확인하고 피드백, 수정, 승인을 주고받는 과정 |
+| 실수한 변경 되돌리기 | 변경의 Commit·Push 여부에 따라 Discard, Revert, Reset 등을 구분해 사용하는 방법 |
 
-```text
-src/
-├── main.tsx               # React 시작점
-├── App.tsx                # 공통 화면과 현재 페이지 선택
-├── App.css                # 공통 스타일
-├── guides.ts              # 챕터별 페이지 주소·제목·컴포넌트 등록
-├── components/
-│   ├── ExternalLink.tsx   # 외부 링크
-│   └── Icon.tsx           # 공용 아이콘
-└── pages/
-    ├── CreateGuide.tsx
-    ├── CloneGuide.tsx
-    ├── DevelopmentGuide.tsx
-    ├── GhGuide.tsx
-    ├── ConflictGuide.tsx
-    ├── GitLabFlowGuide.tsx
-    ├── GitignoreGuide.tsx
-    ├── ReviewGuide.tsx
-    └── UndoGuide.tsx
-public/                   # 가이드 스크린샷
-tests/guides.test.mjs      # 페이지 연결 검증
-```
-
-각 페이지의 본문과 하단 이동 링크는 해당 `pages/*Guide.tsx`에서 수정합니다. 목차 순서, 브라우저 제목, 페이지 주소는 `guides.ts`에서 관리합니다.
-
-## 페이지 추가하기
-
-1. `src/pages/`에 페이지 컴포넌트를 만들고 기본 내보내기(`export default`)를 지정합니다.
-2. `src/guides.ts`의 해당 챕터에 고유한 `id`, `title`, `component`를 등록합니다. 등록한 페이지는 `?guide=id`로 열리며 목차에 자동으로 표시됩니다.
-3. 인접 페이지의 이전·다음 링크와 `tests/guides.test.mjs`의 페이지 목록을 갱신합니다.
-4. 빌드·린트·테스트를 실행합니다.
-
-이미지는 `public/`에 두고 `import.meta.env.BASE_URL`을 붙여 참조합니다. 잘못된 페이지 주소나 `guide` 값이 없는 주소는 첫 페이지로 표시됩니다.
+각 가이드에는 대상 독자, 예상 소요 시간, 준비사항과 단계별 설명이 담겨 있습니다. 화면 예시와 명령어, 자주 생기는 상황에 대한 도움말을 통해 실제 팀 작업에 적용할 수 있도록 안내합니다.
