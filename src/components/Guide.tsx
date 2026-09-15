@@ -72,7 +72,7 @@ export function ConceptGrid({ children }: ContentProps) {
 }
 
 export function FlowSteps({ label, children }: ContentProps & { label: string }) {
-  return <ol aria-label={label} className="my-6 grid list-none grid-cols-4 rounded-[6px] border border-(--border) bg-white p-0 [&_li]:p-4 [&_li+li]:border-l [&_li+li]:border-(--border) [&_strong]:block [&_strong]:text-(--forest) [&_span]:block [&_span]:text-[12px] max-[768px]:grid-cols-2 max-[768px]:[&_li:nth-child(3)]:border-l-0 max-[768px]:[&_li:nth-child(n+3)]:border-t max-[768px]:[&_li:nth-child(n+3)]:border-(--border)">{children}</ol>
+  return <ol aria-label={label} className="my-6 grid auto-cols-fr grid-flow-col list-none rounded-[6px] border border-(--border) bg-white p-0 [&_li]:p-4 [&_li+li]:border-l [&_li+li]:border-(--border) [&_strong]:block [&_strong]:text-(--forest) [&_span]:block [&_span]:text-[12px] max-[768px]:grid-flow-row max-[768px]:grid-cols-2 max-[768px]:[&_li:nth-child(3)]:border-l-0 max-[768px]:[&_li:nth-child(n+3)]:border-t max-[768px]:[&_li:nth-child(n+3)]:border-(--border)">{children}</ol>
 }
 
 export function Example({ children }: ContentProps) {
