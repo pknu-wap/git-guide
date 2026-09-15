@@ -24,6 +24,12 @@ export const chapters = [
       { id: 'develop', title: 'Git으로 함께 개발하기', component: DevelopmentGuide },
       { id: 'gitlab-flow', title: 'GitLab Flow 이해하기', component: GitLabFlowGuide },
       { id: 'review', title: 'PR 리뷰 주고받기', component: ReviewGuide },
+    ],
+  },
+  {
+    number: 3,
+    title: '더 알아보기',
+    pages: [
       { id: 'conflict', title: '충돌 해결하기', component: ConflictGuide },
       { id: 'undo', title: '실수한 변경 되돌리기', component: UndoGuide },
       { id: 'gitignore', title: '.gitignore 사용하기', component: GitignoreGuide },
