@@ -31,7 +31,6 @@ export default function ConflictGuide() {
             height={406}
             alt="README.md의 라이선스 안내를 MIT 라이선스를 사용합니다로 수정한 변경 화면. 새 탭에서 원본 이미지 보기."
             loading="lazy"
-            caption="feat/update-readme-1: README의 라이선스를 MIT로 수정"
             placement="inline"
           />
           <GuideScreenshot
@@ -40,7 +39,6 @@ export default function ConflictGuide() {
             height={406}
             alt="README.md의 같은 라이선스 안내를 GNU 라이선스를 사용합니다로 수정한 변경 화면. 새 탭에서 원본 이미지 보기."
             loading="lazy"
-            caption="feat/update-readme-2: README의 라이선스를 GNU로 수정"
             placement="inline"
           />
           <GuideScreenshot
@@ -49,7 +47,6 @@ export default function ConflictGuide() {
             height={242}
             alt="GitHub PR 목록에 GNU 라이선스 내용 추가와 MIT 라이선스 내용 추가 PR이 열린 화면. 새 탭에서 원본 이미지 보기."
             loading="lazy"
-            caption="같은 기준 브랜치로 병합할 MIT·GNU 라이선스 변경 PR"
             placement="inline"
           />
           <p className="mt-6">
@@ -63,7 +60,6 @@ export default function ConflictGuide() {
             height={380}
             alt="GNU 변경 PR에 README.md 충돌 안내와 Resolve conflicts 버튼이 표시되고 Merge pull request 버튼이 비활성화된 화면. 새 탭에서 원본 이미지 보기."
             loading="lazy"
-            caption="MIT 변경을 먼저 병합한 뒤 GNU 변경 PR에서 발생한 충돌"
             placement="inline"
           />
           <p>
@@ -96,7 +92,6 @@ export default function ConflictGuide() {
                 height={262}
                 alt="충돌 편집 화면: feat/update-readme-2의 GNU 문장은 Current change, main의 MIT 문장은 Incoming change로 표시되며 변경 선택 버튼이 보입니다. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="작업 브랜치의 GNU 변경과 main의 MIT 변경 비교"
                 placement="inline"
               />
             </li>
@@ -114,7 +109,6 @@ export default function ConflictGuide() {
                 height={124}
                 alt="충돌 편집기의 도구 모음에 1 conflict 안내와 Mark as resolved 버튼이 표시된 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="충돌 내용을 수정한 뒤 Mark as resolved로 해결 완료 표시"
                 placement="inline"
               />
             </li>
@@ -169,7 +163,6 @@ export default function ConflictGuide() {
                 height={1544}
                 alt="GitHub Desktop 상단의 Fetch origin 아래에 Last fetched just now가 표시된 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="Pull 후 Last fetched just now 표시 확인"
                 placement="inline"
               />
             </li>
@@ -185,7 +178,6 @@ export default function ConflictGuide() {
                 height={1544}
                 alt="GitHub Desktop의 Current Branch 메뉴에서 feat가 선택되고 하단에 Choose a branch to merge into feat/update-readme-2 버튼이 표시된 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="Current Branch 메뉴 하단에서 병합할 브랜치 선택 버튼 클릭"
                 placement="inline"
               />
             </li>
@@ -200,7 +192,6 @@ export default function ConflictGuide() {
                 height={1544}
                 alt="GitHub Desktop의 병합 창에서 main 브랜치가 선택되고 충돌 파일 1개 안내와 Create a merge commit 버튼이 표시된 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="main 브랜치 선택 후 Create a merge commit 버튼 클릭"
                 placement="inline"
               />
               <Callout
@@ -230,7 +221,6 @@ export default function ConflictGuide() {
                 height={1544}
                 alt="GitHub Desktop의 Resolve conflicts before Merge 창에 README.md의 충돌 1개와 Open in Visual Studio Code 버튼이 표시된 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="충돌한 README.md를 Open in Visual Studio Code로 열기"
                 placement="inline"
               />
             </li>
@@ -246,7 +236,6 @@ export default function ConflictGuide() {
                 height={466}
                 alt="VS Code의 README.md에서 GNU 라이선스는 Current Change, main의 MIT 라이선스는 Incoming Change로 표시되고 변경 선택 버튼들이 보이는 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="VS Code에서 현재 브랜치와 main의 충돌 내용 비교"
                 placement="inline"
               />
             </li>
@@ -263,7 +252,6 @@ export default function ConflictGuide() {
                 height={1544}
                 alt="GitHub Desktop에 All conflicted files have been resolved.와 0 conflicted files가 표시되고 Continue Merge 버튼이 활성화된 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="모든 충돌이 해결되었는지 확인하고 Continue Merge 클릭"
                 placement="inline"
               />
             </li>
@@ -278,7 +266,6 @@ export default function ConflictGuide() {
                 height={1544}
                 alt="GitHub Desktop에서 병합 커밋이 완료되고 Push origin 버튼과 깃허브에 올릴 커밋 안내가 표시된 화면. 새 탭에서 원본 이미지 보기."
                 loading="lazy"
-                caption="Push origin으로 충돌 해결 결과를 깃허브에 반영"
                 placement="inline"
               />
             </li>

@@ -83,18 +83,16 @@ export function ReadingLinks({ children }: ContentProps) {
   return <p className="mt-6 text-[13px]">{children}</p>
 }
 
-export function GuideScreenshot({ src, width, height, alt, loading, caption, reference, placement = 'sticky' }: {
+export function GuideScreenshot({ src, width, height, alt, loading, reference, placement = 'sticky' }: {
   src: string; width: number; height: number; alt: string; loading?: 'lazy' | 'eager'
-  caption: string; reference?: ReactNode; placement?: 'sticky' | 'inline'
+  reference?: ReactNode; placement?: 'sticky' | 'inline'
 }) {
   return (
     <figure className={`top-24 min-w-0 [@media(width<=1100px)]:row-start-1 ${placement === 'sticky' ? 'sticky [@media(width<=1100px)]:static' : 'static mt-6'}`}>
       <ExternalLink href={src} className="block rounded-[4px]">
         <img src={src} width={width} height={height} alt={alt} loading={loading} className="block h-auto w-full rounded-[4px]" />
       </ExternalLink>
-      <figcaption className="mt-4 flex flex-wrap items-center justify-between gap-3 text-[12px] [&_a]:text-(--forest) [&_a]:no-underline">
-        <span className="text-(--muted) italic">{caption}</span>{reference}
-      </figcaption>
+      {reference && <figcaption className="mt-4 text-right text-[12px] [&_a]:text-(--forest) [&_a]:no-underline">{reference}</figcaption>}
     </figure>
   )
 }
