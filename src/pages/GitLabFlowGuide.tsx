@@ -49,6 +49,6 @@ export default function GitLabFlowGuide() {
             <li><strong>배포 기준:</strong> main 브랜치에 쌓인 기능을 언제 production 브랜치로 머지하는가?</li>
           </ul>
           <Example>예시: 이슈 작성 → main 브랜치 pull → feat 브랜치 생성 → PR 작성 → 팀원 1명의 리뷰와 테스트 통과 → main 브랜치에 머지 → 일정 주기마다 확인 후 production 브랜치에 머지</Example>
-        </section></GuideBody><GuideNavigation><a href="?guide=develop">← 이전 가이드: Git으로 함께 개발하기</a><ButtonLink href="?guide=review" spacing="navigation">다음 가이드: PR 리뷰 주고받기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=develop">← 이전 가이드: Git으로 함께 개발하기</a><ButtonLink href="?guide=review">다음 가이드: PR 리뷰 주고받기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

@@ -23,7 +23,7 @@ export default function ReviewGuide() {
           <GuideScreenshot src={`${import.meta.env.BASE_URL}reviewers.png`} width={630} height={160} alt="PR의 Reviewers 목록에 1lisalozf와 daimlee가 표시되고, 각 이름 오른쪽에 방패 아이콘과 노란 점이 있는 화면. 새 탭에서 원본 이미지 보기." loading="lazy" placement="inline" />
           <p>사진의 <strong>Reviewers</strong>에는 리뷰를 요청한 두 팀원이 표시되어 있습니다. 오른쪽 위 톱니바퀴로 리뷰어를 선택할 수 있고, 이름 옆의 노란 점은 아직 리뷰를 기다리는 상태입니다. 방패 아이콘은 해당 팀원이 코드 소유자(CODEOWNER)임을 나타냅니다.</p>
           <p><strong>Assignees</strong>에는 작업 담당자를, <strong>Reviewers</strong>에는 리뷰를 요청할 사람을 지정합니다.</p>
-          <h3 className="mt-8">CODEOWNERS로 리뷰어 자동 지정하기</h3>
+          <h3>CODEOWNERS로 리뷰어 자동 지정하기</h3>
           <p>파일별 담당자를 <code>.github/CODEOWNERS</code>에 등록하면, 담당 파일을 변경하는 PR이 열릴 때 해당 팀원에게 자동으로 리뷰가 요청됩니다.</p>
           <GuideScreenshot src={`${import.meta.env.BASE_URL}codeowners.png`} width={846} height={730} alt=".github/CODEOWNERS 파일에 유효한 설정 안내와 전체 파일 담당자를 지정하는 * @1lisalozf @daimlee @psvm203 규칙이 표시된 화면. 새 탭에서 원본 이미지 보기." loading="lazy" placement="inline" />
           <p><code>*</code>은 전체 파일을, @psvm203은 담당자를 뜻합니다. 이렇게 설정하면 모든 파일 변경 시 해당 리뷰어가 지정되는데, 더 자세한 설명을 원하시면 하단의 자료를 참고하세요.</p>
@@ -40,7 +40,7 @@ export default function ReviewGuide() {
           <ConceptGrid><div><h3>수정 요청 예시</h3><p>환경 변수가 없으면 실행에 실패합니다. 문서에 해당 내용을 환경 변수 관련 내용을 추가해주세요.</p></div><div><h3>선택적인 제안 예시</h3><p>실행 후 접속 주소도 적으면 처음 사용하는 사람이 확인하기 편할 것 같습니다.</p></div></ConceptGrid>
           <GuideScreenshot src={`${import.meta.env.BASE_URL}review.png`} width={1780} height={722} alt="test.txt의 추가된 줄에 리뷰 댓글을 작성하고, 리뷰와 댓글에 Pending 상태가 표시된 화면. 새 탭에서 원본 이미지 보기." loading="lazy" placement="inline" />
           <p>리뷰를 시작한 뒤 아직 제출하지 않은 댓글은 <strong>Pending</strong> 상태이며 작성자에게 보이지 않습니다. 댓글을 다 적었다면 전체 의견을 정리해 리뷰를 제출하세요.</p>
-          <h3 className="mt-8">의견을 정리해 제출하기</h3>
+          <h3>의견을 정리해 제출하기</h3>
           <p><strong>Review changes</strong>를 누르고 전체 의견을 적은 뒤, 상황에 맞는 종류를 선택해 <strong>Submit review</strong>를 누릅니다.</p>
           <ul>
             <li><strong>Comment:</strong> 질문이나 의견을 남깁니다.</li>
@@ -59,6 +59,6 @@ export default function ReviewGuide() {
           <p>작성자 혹은 머지 담당자는 승인, 충돌 여부 등을 확인한 뒤 머지합니다.</p>
           <p>머지가 끝나면 GitHub Desktop에서 base 브랜치로 돌아와 Pull하세요. 머지 과정에서 충돌이 있다면 <a href="?guide=conflict">충돌 해결하기</a>를 참고하세요.</p>
           <ReadingLinks>참고 자료: <a href="https://docs.github.com/ko/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request" target="_blank" rel="noopener noreferrer">PR 리뷰</a>· <a href="https://docs.github.com/ko/pull-requests/how-tos/review-pull-requests/incorporating-feedback-in-your-pull-request" target="_blank" rel="noopener noreferrer">피드백 반영하기</a></ReadingLinks>
-        </section></GuideBody><GuideNavigation><a href="?guide=gitlab-flow">← 이전 가이드: GitLab Flow 이해하기</a><ButtonLink href="?guide=conflict" spacing="navigation">다음 가이드: 충돌 해결하기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=gitlab-flow">← 이전 가이드: GitLab Flow 이해하기</a><ButtonLink href="?guide=conflict">다음 가이드: 충돌 해결하기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

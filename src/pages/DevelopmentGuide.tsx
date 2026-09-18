@@ -34,7 +34,7 @@ export default function DevelopmentGuide() {
           <StepTitle number={3}>Pull로 최신 코드 가져오기</StepTitle>
           <p>작업을 시작하기 전에 <strong>Current Branch</strong>에서 Default 브랜치(보통은 main 또는 master)를 선택하세요. <strong>Fetch origin</strong>으로 원격의 새 커밋을 확인하고, 받을 변경이 있다면 <strong>Pull origin</strong>을 눌러 내 컴퓨터의 브랜치에 반영합니다.</p>
           <GuideScreenshot src={`${import.meta.env.BASE_URL}fetch.png`} width={918} height={98} alt="GitHub Desktop의 Current Branch가 main으로 선택되어 있고 Fetch origin 버튼이 표시된 화면. 새 탭에서 원본 이미지 보기." loading="lazy" placement="inline" />
-          <dl className="my-6 [&>div]:grid [&>div]:grid-cols-[80px_1fr] [&>div]:gap-4 [&>div]:border-b [&>div]:border-(--border) [&>div]:py-4 [&_dt]:font-bold [&_dt]:text-(--forest) [&_dd]:m-0">
+          <dl className="guide-block [&>div]:grid [&>div]:grid-cols-[80px_1fr] [&>div]:gap-4 [&>div]:border-b [&>div]:border-(--border) [&>div]:py-4 [&_dt]:font-bold [&_dt]:text-(--forest) [&_dd]:m-0">
             <div><dt>Fetch</dt><dd>깃허브의 최신 이력을 가져옵니다. 이력만 가져올 뿐 실제로 파일을 업데이트하지는 않습니다.</dd></div>
             <div><dt>Pull</dt><dd>깃허브의 최신 이력을 가져오고 실제로 파일까지 업데이트합니다. 같은 부분을 다르게 수정했다면 충돌이 발생할 수 있습니다.</dd></div>
         </dl>
@@ -71,7 +71,7 @@ export default function DevelopmentGuide() {
           <p><strong>풀 리퀘스트(Pull Request, PR)</strong>는 깃허브에서 내 브랜치의 변경을 다른 브랜치에 합치자고 제안하는 기능입니다. <strong>Merge</strong>는 두 브랜치의 변경 이력을 통합하는 Git 작업입니다.</p>
           <ul>
             <li>깃허브 데스크톱의 <strong>Preview Pull Request</strong>로 변경을 확인하고 <strong>Create Pull Request</strong>로 깃허브에서 PR 작성을 진행하세요.</li>
-            <li><strong>base</strong>는 변경을 받을 브랜치, <strong>compare</strong>는 내 작업 브랜치입니다. 예시에서는 base가 <code>main</code>, compare가 <code>feat/kakao-login</code>입니다.</li> 팀에 따라 develop 브랜치에 변경 사항을 합치는 경우도 있으니 확인하세요.
+            <li><strong>base</strong>는 변경을 받을 브랜치, <strong>compare</strong>는 내 작업 브랜치입니다. 예시에서는 base가 <code>main</code>, compare가 <code>feat/kakao-login</code>입니다. 팀에 따라 develop 브랜치에 변경 사항을 합치는 경우도 있으니 확인하세요.</li>
             <li>변경 내용, 관련 이슈, 리뷰 받고 싶은 내용 등을 적고 팀원에게 리뷰를 요청하세요.</li>
             <li>피드백 발생 시 같은 브랜치에서 수정 → 커밋 → 푸시하면 기존 PR에 반영됩니다.</li>
             <li>리뷰와 필요한 검사가 끝나면 팀의 규칙에 따라 PR을 머지하세요. 이후 깃허브 데스크톱에서 base 브랜치로 돌아와 Pull로 결과를 가져옵니다.</li>
@@ -81,6 +81,6 @@ export default function DevelopmentGuide() {
           <StepTitle number={8}>충돌 해결과 변경 이력 확인</StepTitle>
         <p><strong>충돌(Conflict)</strong>은 깃이 변경을 자동으로 합칠 수 없는 상태입니다. 두 사람이 같은 부분을 다르게 고친 경우 등이 해당합니다.</p>
         <p>해결 방법은 <a href="?guide=conflict">충돌 해결하기</a> 가이드를 참고하세요.</p>
-        </section></GuideBody><GuideNavigation><a href="?guide=clone">← 이전 가이드: 팀의 레포지토리 복제하기</a><ButtonLink href="?guide=gitlab-flow" spacing="navigation">다음 가이드: GitLab Flow 이해하기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=clone">← 이전 가이드: 팀의 레포지토리 복제하기</a><ButtonLink href="?guide=gitlab-flow">다음 가이드: GitLab Flow 이해하기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

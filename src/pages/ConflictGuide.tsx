@@ -49,7 +49,7 @@ export default function ConflictGuide() {
             loading="lazy"
             placement="inline"
           />
-          <p className="mt-6">
+          <p>
             두 브랜치에서 각각 <code>README.md</code>를 수정하고 PR을
             작성했습니다. MIT 라이선스로 수정한 PR을 먼저 머지했을 때 어떻게
             되는지 봅시다.
@@ -70,7 +70,7 @@ export default function ConflictGuide() {
         </section>
         <section>
           <StepTitle number={2}>깃허브에서 충돌 해결하기</StepTitle>
-          <ol className="mt-4 list-decimal space-y-6 pl-6">
+          <ol>
             <li>
               <p>
                 GNU 라이선스로 수정한 PR을 열고, 아래쪽 충돌 안내의{" "}
@@ -150,7 +150,7 @@ export default function ConflictGuide() {
               해결할 작업 브랜치로 진행하세요.
             </p>
           </Callout>
-          <ol className="mt-4 list-decimal space-y-6 pl-6">
+          <ol>
             <li>
               <p>
                 깃허브 데스크톱에서 <code>main</code>과 <code>feat</code>{" "}
@@ -274,7 +274,7 @@ export default function ConflictGuide() {
       </GuideBody>
       <GuideNavigation>
         <a href="?guide=review">← 이전 가이드: PR 리뷰 주고받기</a>
-        <ButtonLink href="?guide=undo" spacing="navigation">
+        <ButtonLink href="?guide=undo">
           다음 가이드: 실수한 변경 되돌리기 →
         </ButtonLink>
       </GuideNavigation>

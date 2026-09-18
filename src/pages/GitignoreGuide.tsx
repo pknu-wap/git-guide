@@ -105,6 +105,6 @@ git status --short --ignored -- debug.log`}</CommandBlock>
           <p>이 과정은 앞으로의 추적을 중단합니다. GitHub의 현재 브랜치 파일 목록에서 사라져도, 파일이 들어 있던 과거 Commit에서는 내용을 볼 수 있습니다.</p>
           <p>API 키나 비밀번호를 올린 경우에는 해당 자격 증명을 먼저 폐기·교체하세요. 과거 이력에서 민감한 내용을 제거하는 작업은 별도 절차이며, 공유 이력을 바꿀 수 있으므로 팀과 함께 진행해야 합니다.</p>
           <ReadingLinks>공식 문서: <a href="https://git-scm.com/docs/git-rm" target="_blank" rel="noopener noreferrer">git rm --cached</a>· <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository" target="_blank" rel="noopener noreferrer">민감한 데이터 제거 안내</a></ReadingLinks>
-        </section></GuideBody><GuideNavigation><a href="?guide=undo">← 이전 가이드: 실수한 변경 되돌리기</a><ButtonLink href="?guide=gh" spacing="navigation">다음 가이드: GitHub CLI(gh) 사용하기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=undo">← 이전 가이드: 실수한 변경 되돌리기</a><ButtonLink href="?guide=gh">다음 가이드: GitHub CLI(gh) 사용하기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

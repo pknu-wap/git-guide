@@ -94,6 +94,6 @@ git branch backup/before-reset`}</CommandBlock>
           </ul>
           <p>실제 코드에서는 파일 내용뿐 아니라 실행과 테스트 결과를 확인하세요. 충돌이 생기면 <a href="?guide=conflict">충돌 해결하기</a>를 참고하고, Revert나 수정 Commit을 공유할 때는 팀의 리뷰 절차를 따릅니다.</p>
           <GuideQuestion summary="Reset 대상을 잘못 골랐다면?"><p>추가 Reset을 멈추고 <code>git reflog</code>에서 Reset 전 Commit을 찾으세요. 해당 해시를 확인한 뒤 <code>git branch recover/work COMMIT_HASH</code>로 복구용 브랜치를 만들 수 있습니다. COMMIT_HASH는 찾은 해시로 바꿉니다. reflog는 로컬 기록이며, 미커밋 상태에서 버린 내용의 복구를 보장하지 않습니다.</p></GuideQuestion>
-        </section></GuideBody><GuideNavigation><a href="?guide=conflict">← 이전 가이드: 충돌 해결하기</a><ButtonLink href="?guide=gitignore" spacing="navigation">다음 가이드: .gitignore 사용하기 →</ButtonLink></GuideNavigation></GuidePage>
+        </section></GuideBody><GuideNavigation><a href="?guide=conflict">← 이전 가이드: 충돌 해결하기</a><ButtonLink href="?guide=gitignore">다음 가이드: .gitignore 사용하기 →</ButtonLink></GuideNavigation></GuidePage>
   )
 }

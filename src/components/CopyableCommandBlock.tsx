@@ -25,7 +25,7 @@ function CommandLine({ command }: { command: string }) {
 
 export default function CopyableCommandBlock({ children }: { children: string }) {
   return (
-    <div className="my-4 space-y-3 rounded-[6px] border border-(--border) bg-(--pale-green) p-4">
+    <div className="space-y-4 rounded-[6px] border border-(--border) bg-(--pale-green) p-4">
       {children.split('\n').map((command, index) => <CommandLine key={`${index}:${command}`} command={command} />)}
     </div>
   )
