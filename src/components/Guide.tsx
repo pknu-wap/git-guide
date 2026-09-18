@@ -88,11 +88,11 @@ export function GuideScreenshot({ src, width, height, alt, loading, caption, ref
   caption: string; reference?: ReactNode; placement?: 'sticky' | 'inline'
 }) {
   return (
-    <figure className={`top-24 min-w-0 rounded-[6px] border border-(--border) bg-white p-2 [@media(width<=1100px)]:row-start-1 ${placement === 'sticky' ? 'sticky [@media(width<=1100px)]:static' : 'static mt-6'}`}>
+    <figure className={`top-24 min-w-0 [@media(width<=1100px)]:row-start-1 ${placement === 'sticky' ? 'sticky [@media(width<=1100px)]:static' : 'static mt-6'}`}>
       <ExternalLink href={src} className="block rounded-[4px]">
         <img src={src} width={width} height={height} alt={alt} loading={loading} className="block h-auto w-full rounded-[4px]" />
       </ExternalLink>
-      <figcaption className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-(--border) px-2 py-3 text-[12px] [&_a]:text-(--forest) [&_a]:no-underline">
+      <figcaption className="mt-4 flex flex-wrap items-center justify-between gap-3 text-[12px] [&_a]:text-(--forest) [&_a]:no-underline">
         <span className="text-(--muted) italic">{caption}</span>{reference}
       </figcaption>
     </figure>
