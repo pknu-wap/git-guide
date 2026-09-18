@@ -16,9 +16,9 @@ function CommandLine({ command }: { command: string }) {
     <div>
       <div className="flex items-start gap-3">
         <code className="min-w-0 flex-1 whitespace-pre-wrap wrap-anywhere p-0">{command}</code>
-        <button type="button" onClick={copy} aria-label={`${command} 복사`} className="shrink-0 cursor-pointer rounded-[4px] border border-(--forest) px-2 py-1 text-[12px] font-semibold text-(--forest) hover:bg-(--forest) hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--forest)">복사</button>
+        <button type="button" onClick={copy} aria-label={`${command} 복사`} className="shrink-0 cursor-pointer rounded-[4px] border border-(--forest) px-2 py-1 text-[16px] font-semibold text-(--forest) hover:bg-(--forest) hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--forest)">복사</button>
       </div>
-      <p role="status" className="m-0 text-[12px]">{status}</p>
+      <p role="status" className="m-0 text-[16px]">{status}</p>
     </div>
   )
 }

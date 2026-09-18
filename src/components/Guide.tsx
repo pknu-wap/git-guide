@@ -14,12 +14,12 @@ export function GuideHeader({ title, audience, duration, children }: ContentProp
 }) {
   return (
     <section aria-labelledby="page-title">
-      <h1 id="page-title" className="mb-4 text-[40px] leading-[1.35] tracking-[-0.04em] break-keep text-(--forest) max-[768px]:text-[32px]">{title}</h1>
-      <div className="flex gap-4 border-b border-(--border) pb-8 text-[12px] text-(--muted)">
+      <h1 id="page-title" className="mb-4 text-[44px] leading-[1.35] tracking-[-0.04em] break-keep text-(--forest) max-[768px]:text-[36px]">{title}</h1>
+      <div className="flex flex-wrap gap-4 border-b border-(--border) pb-8 text-[16px] text-(--muted)">
         {audience && <span className="flex items-center gap-[6px]"><Icon name="user" className="size-[14px]" />대상: {audience}</span>}
         <span className="flex items-center gap-[6px]"><Icon name="clock" className="size-[14px]" />소요 시간: {duration}</span>
       </div>
-      <p className="mt-8 max-w-[672px] text-[18px] break-keep text-(--muted) max-[768px]:text-[16px]">{children}</p>
+      <p className="mt-8 max-w-[672px] text-[20px] break-keep text-(--muted)">{children}</p>
     </section>
   )
 }
@@ -34,8 +34,8 @@ export function LessonGrid({ children }: ContentProps) {
 
 export function StepTitle({ number, id, children }: ContentProps & { number: number; id?: string }) {
   return (
-    <h2 id={id} className="flex items-center gap-3 text-[24px] leading-[1.4] break-keep text-[#202923] max-[768px]:text-[22px]">
-      <span className="flex size-8 flex-[0_0_32px] items-center justify-center rounded-full bg-(--forest) text-[14px] text-white">{number}</span>{children}
+    <h2 id={id} className="flex items-center gap-3 text-[28px] leading-[1.4] break-keep text-[#202923] max-[768px]:text-[26px]">
+      <span className="flex size-8 flex-[0_0_32px] items-center justify-center rounded-full bg-(--forest) text-[16px] text-white">{number}</span>{children}
     </h2>
   )
 }
@@ -48,7 +48,7 @@ export function Callout({ id, title, kind = 'preparation', children }: ContentPr
     <aside aria-labelledby={id} className="guide-block flex gap-4 rounded-[6px] border-l-4 border-(--forest) bg-white p-6 max-[768px]:p-5 [&_p]:text-(--muted)">
       <Icon name="info" className="mt-[5px] size-5 text-(--forest)" />
       <div className="guide-card-content min-w-0">
-        <Heading id={id} className="text-[15px] text-(--forest)">{title}</Heading>
+        <Heading id={id} className="text-[18px] text-(--forest)">{title}</Heading>
         {children}
       </div>
     </aside>
@@ -69,11 +69,11 @@ export function GuideQuestion({ summary, children }: ContentProps & { summary: s
 }
 
 export function ConceptGrid({ children }: ContentProps) {
-  return <div className="guide-block guide-concepts grid grid-cols-2 gap-6 max-[768px]:grid-cols-1 [&>div]:rounded-[6px] [&>div]:border [&>div]:border-(--border) [&>div]:bg-white [&>div]:p-6 [&_h3]:text-[16px] [&_h3]:text-(--forest)">{children}</div>
+  return <div className="guide-block guide-concepts grid grid-cols-2 gap-6 max-[768px]:grid-cols-1 [&>div]:rounded-[6px] [&>div]:border [&>div]:border-(--border) [&>div]:bg-white [&>div]:p-6 [&_h3]:text-[20px] [&_h3]:text-(--forest)">{children}</div>
 }
 
 export function FlowSteps({ label, children }: ContentProps & { label: string }) {
-  return <ol aria-label={label} className="guide-block grid auto-cols-fr grid-flow-col list-none rounded-[6px] border border-(--border) bg-white p-0 [&_li]:p-4 [&_li+li]:border-l [&_li+li]:border-(--border) [&_strong]:block [&_strong]:text-(--forest) [&_span]:block [&_span]:text-[12px] max-[768px]:grid-flow-row max-[768px]:grid-cols-2 max-[768px]:[&_li:nth-child(3)]:border-l-0 max-[768px]:[&_li:nth-child(n+3)]:border-t max-[768px]:[&_li:nth-child(n+3)]:border-(--border)">{children}</ol>
+  return <ol aria-label={label} className="guide-block grid auto-cols-fr grid-flow-col list-none rounded-[6px] border border-(--border) bg-white p-0 [&_li]:p-4 [&_li+li]:border-l [&_li+li]:border-(--border) [&_strong]:block [&_strong]:text-(--forest) [&_span]:block [&_span]:text-[16px] max-[768px]:grid-flow-row max-[768px]:grid-cols-2 max-[768px]:[&_li:nth-child(3)]:border-l-0 max-[768px]:[&_li:nth-child(n+3)]:border-t max-[768px]:[&_li:nth-child(n+3)]:border-(--border)">{children}</ol>
 }
 
 export function Example({ children }: ContentProps) {
@@ -81,7 +81,7 @@ export function Example({ children }: ContentProps) {
 }
 
 export function ReadingLinks({ children }: ContentProps) {
-  return <p className="guide-block text-[13px]">{children}</p>
+  return <p className="guide-block text-[16px]">{children}</p>
 }
 
 export function GuideScreenshot({ src, width, height, alt, loading, reference, placement = 'sticky' }: {
@@ -93,7 +93,7 @@ export function GuideScreenshot({ src, width, height, alt, loading, reference, p
       <ExternalLink href={src} className="block rounded-[4px]">
         <img src={src} width={width} height={height} alt={alt} loading={loading} className="block h-auto w-full rounded-[4px]" />
       </ExternalLink>
-      {reference && <figcaption className="mt-4 text-right text-[12px] [&_a]:text-(--forest) [&_a]:no-underline">{reference}</figcaption>}
+      {reference && <figcaption className="mt-4 text-right text-[16px] [&_a]:text-(--forest) [&_a]:no-underline">{reference}</figcaption>}
     </figure>
   )
 }
