@@ -9,16 +9,12 @@ export function GuidePage({ children }: ContentProps) {
   return <div className="guide-page mx-auto max-w-[1100px] px-12 py-16 max-[768px]:px-6 max-[768px]:py-10">{children}</div>
 }
 
-export function GuideHeader({ title, audience, duration, children }: ContentProps & {
-  title: string; audience?: string; duration: string
+export function GuideHeader({ title, children }: ContentProps & {
+  title: string
 }) {
   return (
     <section aria-labelledby="page-title">
       <h1 id="page-title" className="mb-4 text-[44px] leading-[1.35] tracking-[-0.04em] break-keep text-(--forest) max-[768px]:text-[36px]">{title}</h1>
-      <div className="flex flex-wrap gap-4 border-b border-(--border) pb-8 text-[16px] text-(--muted)">
-        {audience && <span className="flex items-center gap-[6px]"><Icon name="user" className="size-[14px]" />대상: {audience}</span>}
-        <span className="flex items-center gap-[6px]"><Icon name="clock" className="size-[14px]" />소요 시간: {duration}</span>
-      </div>
       <p className="mt-8 max-w-[672px] text-[20px] break-keep text-(--muted)">{children}</p>
     </section>
   )

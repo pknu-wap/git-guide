@@ -13,7 +13,7 @@ import {
 } from '../components/Guide'
 export default function GitLabFlowGuide() {
   return (
-    <GuidePage><GuideHeader title="GitLab Flow 이해하기" duration="약 10분">여러 기능을 어디에 모으고, 언제 배포할까요? GitLab Flow는 이슈와 작업 브랜치, 코드 리뷰, 배포 흐름을 연결하는 브랜치 전략입니다. 팀의 배포 방식에 맞춰 적용하는 방법을 알아봅시다.</GuideHeader><Callout id="flow-preparation" title="꼭 GitLab Flow를 사용해야하나요?"><p>GitLab Flow 말고도 Git Flow, GitHub Flow 등 다양한 전략이 있습니다. 팀에 맞는 전략을 찾아보세요.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title="GitLab Flow 이해하기">여러 기능을 어디에 모으고, 언제 배포할까요? GitLab Flow는 이슈와 작업 브랜치, 코드 리뷰, 배포 흐름을 연결하는 브랜치 전략입니다. 팀의 배포 방식에 맞춰 적용하는 방법을 알아봅시다.</GuideHeader><Callout id="flow-preparation" title="꼭 GitLab Flow를 사용해야하나요?"><p>GitLab Flow 말고도 Git Flow, GitHub Flow 등 다양한 전략이 있습니다. 팀에 맞는 전략을 찾아보세요.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>기본 흐름 이해하기</StepTitle>
           <p><code>main</code>에서 작업 브랜치를 만들고, 리뷰와 검사를 거쳐 다시 <code>main</code>에 합칩니다. 이슈에는 작업 목적을, PR에는 실제 변경과 확인 결과를 남깁니다.</p>
           <FlowSteps label="GitLab Flow의 기본 작업 순서"><li><strong>이슈</strong><span>할 일과 완료 기준</span></li><li><strong>feat 브랜치</strong><span>main에서 분기</span></li><li><strong>풀 리퀘스트 (PR)</strong><span>코드 리뷰</span></li><li><strong>main 브랜치</strong><span>검증한 작업 통합</span></li></FlowSteps>

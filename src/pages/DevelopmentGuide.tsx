@@ -13,7 +13,7 @@ import {
 } from '../components/Guide'
 export default function DevelopmentGuide() {
   return (
-    <GuidePage><GuideHeader title="Git으로 함께 개발하기" duration="약 15분">코드를 수정하고, 변경 이력을 남기고, 팀원의 작업과 합치는 과정을 알아봅시다.</GuideHeader><Callout id="development-preparation" title="시작 전 준비사항"><p>GitHub Desktop에서 팀 레포지토리를 열어주세요. 팀에서 작업을 합치는 Default 브랜치가 무엇인지 확인합니다.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title="Git으로 함께 개발하기">코드를 수정하고, 변경 이력을 남기고, 팀원의 작업과 합치는 과정을 알아봅시다.</GuideHeader><Callout id="development-preparation" title="시작 전 준비사항"><p>GitHub Desktop에서 팀 레포지토리를 열어주세요. 팀에서 작업을 합치는 Default 브랜치가 무엇인지 확인합니다.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>깃과 깃허브 이해하기</StepTitle>
           <p><strong>깃(Git)</strong>은 파일의 변경 이력을 기록하고 여러 작업을 합치는 버전 관리 도구입니다. <strong>깃허브(GitHub)</strong>는 레포지토리를 온라인에서 공유하고 코드 리뷰를 진행하는 서비스이며, <strong>깃허브 데스크톱(GitHub Desktop)</strong>은 깃이나 깃허브의 기능을 버튼으로 쉽게 사용할 수 있도록 도와주는 프로그램입니다.</p>
           <ConceptGrid><div><h3>내 컴퓨터 · 깃</h3><p>파일을 수정하고 커밋(Commit)을 만드는 곳입니다. 인터넷 연결 없이도 변경 이력을 기록할 수 있습니다.</p></div><div><h3>원격 · 깃허브</h3><p>푸시(Push)와 풀(Pull)을 사용하여 팀원들과 커밋을 공유하는 곳입니다.</p></div></ConceptGrid>

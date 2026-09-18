@@ -13,7 +13,7 @@ import CommandBlock from "../components/CopyableCommandBlock";
 export default function GhGuide() {
   return (
     <GuidePage>
-      <GuideHeader title="GitHub CLI 사용하기" duration="약 10분">
+      <GuideHeader title="GitHub CLI 사용하기">
         GitHub CLI는 터미널에서 GitHub의 기능을 사용하는 공식 도구입니다.{" "}
         <code>gh</code>명령어로 이슈를 확인하고 Pull Request를 만들어봅시다.
         앞에서 배운 GitHub Desktop과 함께 사용할 수 있습니다.

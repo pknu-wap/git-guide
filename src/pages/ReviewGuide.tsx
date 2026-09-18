@@ -12,7 +12,7 @@ import {
 } from '../components/Guide'
 export default function ReviewGuide() {
   return (
-    <GuidePage><GuideHeader title="PR 리뷰 주고받기" duration="약 15분">리뷰는 변경의 목적과 동작을 팀원이 함께 확인하는 과정입니다. <br/> 리뷰 요청부터 피드백 반영과 승인까지 주고받아봅시다.</GuideHeader><GuideBody reading><section>
+    <GuidePage><GuideHeader title="PR 리뷰 주고받기">리뷰는 변경의 목적과 동작을 팀원이 함께 확인하는 과정입니다. <br/> 리뷰 요청부터 피드백 반영과 승인까지 주고받아봅시다.</GuideHeader><GuideBody reading><section>
           <StepTitle number={1}>작성자: 리뷰할 내용 준비하기</StepTitle>
           <p>feat 브랜치에서 커밋을 작성하면 깃허브 데스크톱에서 <strong>Preview Pull Request</strong> 버튼이 생깁니다. PR 본문에는 리뷰어가 이해하고 확인할 수 있도록 변경 내용과 관련 이슈, 검증 방법 등을 적습니다. 아직 작업이 끝나지 않았다면 <strong>Convert to draft</strong>로 전환합니다.</p>
           <GuideScreenshot src={`${import.meta.env.BASE_URL}preview_pull_request.png`} width={958} height={312} alt="GitHub Desktop에서 feat/kakao-login 브랜치의 Preview Pull Request 버튼이 표시된 화면. 새 탭에서 원본 이미지 보기." loading="lazy" placement="inline" />

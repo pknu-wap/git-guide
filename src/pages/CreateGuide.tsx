@@ -12,7 +12,7 @@ import ExternalLink from '../components/ExternalLink'
 
 export default function CreateGuide() {
   return (
-    <GuidePage><GuideHeader title="(팀장) 팀의 레포지토리 만들기" audience="팀장" duration="약 5분">레포지토리(Repository)는 팀의 코드와 변경 이력이 담기는 공동의 저장소입니다. 팀장은 프로젝트 시작 시 레포지토리를 생성하고 팀원들에게 공유합니다.</GuideHeader><Callout id="preparation-title" title="시작 전 준비사항"><p>pknu-wap 조직에 초대되어야 합니다. 만약 초대되어 있지 않다면 임원진에게 문의해주세요.</p></Callout><LessonGrid><GuideBody><section id="lesson">
+    <GuidePage><GuideHeader title="(팀장) 팀의 레포지토리 만들기">레포지토리(Repository)는 팀의 코드와 변경 이력이 담기는 공동의 저장소입니다. 팀장은 프로젝트 시작 시 레포지토리를 생성하고 팀원들에게 공유합니다.</GuideHeader><Callout id="preparation-title" title="시작 전 준비사항"><p>pknu-wap 조직에 초대되어야 합니다. 만약 초대되어 있지 않다면 임원진에게 문의해주세요.</p></Callout><LessonGrid><GuideBody><section id="lesson">
             <StepTitle number={1}>기본 정보 설정 (General)</StepTitle>
             <p><ExternalLink href="https://github.com/new">github.com/new</ExternalLink>에 접속하여 레포지토리 만들기를 시작하세요.</p>
             <ButtonLink href="https://github.com/new" external>GitHub에서 레포지토리 만들기</ButtonLink>

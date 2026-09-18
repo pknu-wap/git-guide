@@ -12,7 +12,7 @@ import {
 export default function ConflictGuide() {
   return (
     <GuidePage>
-      <GuideHeader title="충돌 해결하기" duration="약 15분">
+      <GuideHeader title="충돌 해결하기">
         같은 파일의 같은 줄을 서로 다르게 수정하면 깃이 어느 내용을 남길지
         결정하지 못해 충돌(Conflict)이 발생합니다. 충돌을 직접 만들고 GitHub
         페이지에서 해결하는 법을 알아봅시다.

@@ -13,7 +13,7 @@ import {
 } from '../components/Guide'
 export default function GitignoreGuide() {
   return (
-    <GuidePage><GuideHeader title=".gitignore 사용하기" duration="약 20분">로그, 빌드 결과물, 내 컴퓨터의 설정까지 모두 공유할 필요는 없습니다. .gitignore에 제외할 파일의 규칙을 적어 필요한 코드만 Commit하는 방법과 이미 커밋한 파일에 규칙을 적용하는 방법을 알아봅시다.</GuideHeader><Callout id="gitignore-preparation" title="시작 전 준비사항"><p>복제한 레포지토리를 에디터와 GitHub Desktop에서 열어두세요. 명령어는 레포지토리 최상위 폴더에서 실행합니다. 팀 프로젝트에서는 새 작업 브랜치를 만들고 진행하세요.</p></Callout><GuideBody reading><section>
+    <GuidePage><GuideHeader title=".gitignore 사용하기">로그, 빌드 결과물, 내 컴퓨터의 설정까지 모두 공유할 필요는 없습니다. .gitignore에 제외할 파일의 규칙을 적어 필요한 코드만 Commit하는 방법과 이미 커밋한 파일에 규칙을 적용하는 방법을 알아봅시다.</GuideHeader><Callout id="gitignore-preparation" title="시작 전 준비사항"><p>복제한 레포지토리를 에디터와 GitHub Desktop에서 열어두세요. 명령어는 레포지토리 최상위 폴더에서 실행합니다. 팀 프로젝트에서는 새 작업 브랜치를 만들고 진행하세요.</p></Callout><GuideBody reading><section>
           <StepTitle number={1}>무엇을 제외할지 정하기</StepTitle>
           <ConceptGrid><div><h3>제외할 파일</h3><p>다시 생성할 수 있는 빌드 결과물, 설치한 의존성 폴더, 실행 로그, 개인 환경 설정 등이 해당합니다.</p></div><div><h3>공유할 파일</h3><p>소스 코드, README, 의존성 정의와 잠금 파일, 비밀 값이 없는 설정 예시, .gitignore 자체는 함께 관리합니다.</p></div></ConceptGrid>
           <p><strong>.gitignore는 아직 추적하지 않는 파일에 적용됩니다.</strong> 파일을 삭제하거나 이미 Commit한 파일의 추적을 자동으로 중단하지 않습니다. 이미 추적 중이라면 <a href="#untrack">아래의 추적 해제 절차</a>를 따르세요.</p>
