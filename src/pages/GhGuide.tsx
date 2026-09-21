@@ -178,7 +178,7 @@ export default function GhGuide() {
         </section>
       </GuideBody>
       <GuideNavigation>
-        <a href="?guide=gitignore">← 이전 가이드: .gitignore 사용하기</a>
+        <a href="?guide=undo">← 이전 가이드: 실수한 작업 취소하기</a>
       </GuideNavigation>
     </GuidePage>
   );

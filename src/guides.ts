@@ -4,7 +4,6 @@ import DevelopmentGuide from "./pages/DevelopmentGuide";
 import GhGuide from "./pages/GhGuide";
 import ConflictGuide from "./pages/ConflictGuide";
 import GitLabFlowGuide from "./pages/GitLabFlowGuide";
-import GitignoreGuide from "./pages/GitignoreGuide";
 import ReviewGuide from "./pages/ReviewGuide";
 import UndoGuide from "./pages/UndoGuide";
 
@@ -44,11 +43,6 @@ export const chapters = [
     pages: [
       { id: "conflict", title: "충돌 해결하기", component: ConflictGuide },
       { id: "undo", title: "실수한 작업 취소하기", component: UndoGuide },
-      {
-        id: "gitignore",
-        title: ".gitignore 사용하기",
-        component: GitignoreGuide,
-      },
       { id: "gh", title: "GitHub CLI 사용하기", component: GhGuide },
     ],
   },

@@ -321,8 +321,8 @@ export default function UndoGuide() {
       </GuideBody>
       <GuideNavigation>
         <a href="?guide=conflict">← 이전 가이드: 충돌 해결하기</a>
-        <ButtonLink href="?guide=gitignore">
-          다음 가이드: .gitignore 사용하기 →
+        <ButtonLink href="?guide=gh">
+          다음 가이드: GitHub CLI 사용하기 →
         </ButtonLink>
       </GuideNavigation>
     </GuidePage>

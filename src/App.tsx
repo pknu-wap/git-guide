@@ -3,10 +3,7 @@ import ExternalLink from "./components/ExternalLink";
 import { chapters } from "./guides";
 
 export default function App() {
-  const requestedGuide = new URLSearchParams(window.location.search).get(
-    "guide",
-  );
-  const guideId = requestedGuide === "untrack" ? "gitignore" : requestedGuide;
+  const guideId = new URLSearchParams(window.location.search).get("guide");
   const chapter =
     chapters.find((chapter) =>
       chapter.pages.some((page) => page.id === guideId),
