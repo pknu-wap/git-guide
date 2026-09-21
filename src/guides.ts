@@ -43,7 +43,7 @@ export const chapters = [
     title: "더 알아보기",
     pages: [
       { id: "conflict", title: "충돌 해결하기", component: ConflictGuide },
-      { id: "undo", title: "실수한 변경 되돌리기", component: UndoGuide },
+      { id: "undo", title: "실수한 작업 취소하기", component: UndoGuide },
       {
         id: "gitignore",
         title: ".gitignore 사용하기",
