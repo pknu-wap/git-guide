@@ -34,7 +34,7 @@ export default function CloneGuide() {
             <StepTitle number={1}>복제 화면 열기</StepTitle>
             <p>
               GitHub Desktop을 실행하고 상단 메뉴에서{" "}
-              <strong>File → Clone Repository…(Ctrl + Shift + O)</strong>를
+              <strong>File → Clone Repository(Ctrl + Shift + O)</strong>를
               선택하세요.<strong>Clone a Repository</strong> 창에서{" "}
               <strong>GitHub.com</strong> 탭을 선택합니다.
             </p>
@@ -61,7 +61,7 @@ export default function CloneGuide() {
             <StepTitle number={3}>저장할 폴더 지정</StepTitle>
             <p>
               <strong>Local Path</strong>는 내 컴퓨터에 레포지토리를 저장할
-              위치입니다. <strong>Choose…</strong>를 눌러 원하는 폴더를
+              위치입니다. <strong>Choose</strong>를 눌러 원하는 폴더를
               선택하세요.
             </p>
           </section>
