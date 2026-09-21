@@ -1,57 +1,57 @@
 @layer components {
-  /* Page groups and numbered sections share the same 48px separation. */
-  .guide-page > * + * {
-    margin-top: 48px;
-  }
-
-  .guide-body,
-  .guide-body :where(section, details, ul > li, ol:not(.list-none) > li) {
-    & > * + * {
-      margin-top: 16px;
+    /* Page groups and numbered sections share the same 48px separation. */
+    .guide-page > * + * {
+        margin-top: 48px;
     }
 
-    & > * + :where(.guide-block),
-    & > :where(.guide-block) + * {
-      margin-top: 24px;
+    .guide-body,
+    .guide-body :where(section, details, ul > li, ol:not(.list-none) > li) {
+        & > * + * {
+            margin-top: 16px;
+        }
+
+        & > * + :where(.guide-block),
+        & > :where(.guide-block) + * {
+            margin-top: 24px;
+        }
+
+        & > * + h3 {
+            margin-top: 32px;
+        }
+
+        & > h2 + *,
+        & > h3 + * {
+            margin-top: 16px;
+        }
     }
 
-    & > * + h3 {
-      margin-top: 32px;
+    .guide-body > section + section {
+        margin-top: 48px;
     }
 
-    & > h2 + *,
-    & > h3 + * {
-      margin-top: 16px;
+    .guide-body :where(ul, ol:not(.list-none)) {
+        padding-left: 24px;
     }
-  }
 
-  .guide-body > section + section {
-    margin-top: 48px;
-  }
+    .guide-body :where(ol:not(.list-none)) {
+        list-style-type: decimal;
+    }
 
-  .guide-body :where(ul, ol:not(.list-none)) {
-    padding-left: 24px;
-  }
+    .guide-body :where(ul) > li + li {
+        margin-top: 16px;
+    }
 
-  .guide-body :where(ol:not(.list-none)) {
-    list-style-type: decimal;
-  }
+    .guide-body :where(ol:not(.list-none)) > li + li {
+        margin-top: 24px;
+    }
 
-  .guide-body :where(ul) > li + li {
-    margin-top: 16px;
-  }
+    .guide-card-content > * + *,
+    .guide-concepts > div > * + * {
+        margin-top: 16px;
+    }
 
-  .guide-body :where(ol:not(.list-none)) > li + li {
-    margin-top: 24px;
-  }
-
-  .guide-card-content > * + *,
-  .guide-concepts > div > * + * {
-    margin-top: 16px;
-  }
-
-  .guide-card-content > :is(h2, h3) + *,
-  .guide-concepts > div > h3 + * {
-    margin-top: 8px;
-  }
+    .guide-card-content > :is(h2, h3) + *,
+    .guide-concepts > div > h3 + * {
+        margin-top: 8px;
+    }
 }
