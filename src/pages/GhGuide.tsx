@@ -15,7 +15,7 @@ export default function GhGuide() {
     <GuidePage>
       <GuideHeader title="GitHub CLI 사용하기">
         GitHub CLI는 터미널에서 GitHub의 기능을 사용하는 공식 도구입니다.{" "}
-        <code>gh</code>명령어로 이슈를 확인하고 Pull Request를 만들어봅시다.
+        <code>gh</code> 명령어로 이슈를 확인하고 Pull Request를 만들어봅시다.
         앞에서 배운 GitHub Desktop과 함께 사용할 수 있습니다.
       </GuideHeader>
       <Callout id="why-github-cli" title="왜 GitHub CLI를 사용하나요?">
@@ -145,7 +145,7 @@ export default function GhGuide() {
             바로 명령어를 실행할 수 있어 편리합니다.
           </p>
           <p>
-            다음은 세 IDE를 사용해 codex로 git과 gh 명령어를 사용하도록 하는
+            다음은 세 IDE를 사용해 Codex로 git과 gh 명령어를 사용하도록 하는
             예시 이미지입니다.
           </p>
           <h3>Zed</h3>

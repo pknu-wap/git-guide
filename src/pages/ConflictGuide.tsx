@@ -81,7 +81,7 @@ export default function ConflictGuide() {
             <li>
               <p>
                 충돌하는 내용을 비교하세요. Accept current change(위쪽 내용
-                반영), Accept incoming chage(아래쪽 내용 반영), Accept both
+                반영), Accept incoming change(아래쪽 내용 반영), Accept both
                 changes(둘 다 반영) 중 하나를 누르거나 직접{" "}
                 <code>{"<<<<<<<"}</code>로 시작해서 <code>{">>>>>>>"}</code>로
                 끝나는 부분을 수정해서 충돌을 해결합니다.
@@ -135,7 +135,7 @@ export default function ConflictGuide() {
           <StepTitle number={3}>vscode로 충돌 해결하기</StepTitle>
           <p>
             간단한 충돌은 깃허브에서 해결할 수 있지만, 복잡한 경우에는 별도의
-            도구를 사용해야합니다. 대부분의 IDE는 충돌 해결 기능을 가지고
+            도구를 사용해야 합니다. 대부분의 IDE는 충돌 해결 기능을 가지고
             있습니다. 이번에는 vscode를 사용해서 충돌을 해결해봅시다.
           </p>
           <Callout
@@ -211,7 +211,7 @@ export default function ConflictGuide() {
             </li>
             <li>
               <p>
-                <strong>Resolve conflicts before Merge</strong> 창이 나타납니다.
+                <strong>Resolve conflicts before Merge</strong> 창이 나타납니다.{" "}
                 <strong>Open in Visual Studio Code</strong> 버튼을 클릭해
                 vscode로 파일을 여세요.
               </p>
@@ -228,7 +228,7 @@ export default function ConflictGuide() {
               <p>
                 vscode에서 충돌한 내용을 비교하고 깃허브와 같은 방법으로
                 수정하세요. <code>{"<<<<<<<"}</code>, <code>{"======="}</code>,{" "}
-                <code>{">>>>>>>"}</code> 가 없는지 확인하고 저장하세요.
+                <code>{">>>>>>>"}</code>가 없는지 확인하고 저장하세요.
               </p>
               <GuideScreenshot
                 src={`${import.meta.env.BASE_URL}vscode_resolve.png`}
@@ -275,7 +275,7 @@ export default function ConflictGuide() {
       <GuideNavigation>
         <a href="?guide=review">← 이전 가이드: PR 리뷰 주고받기</a>
         <ButtonLink href="?guide=undo">
-          다음 가이드: 실수한 변경 되돌리기 →
+          다음 가이드: 실수한 작업 취소하기 →
         </ButtonLink>
       </GuideNavigation>
     </GuidePage>

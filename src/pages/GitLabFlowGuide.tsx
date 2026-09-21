@@ -19,7 +19,7 @@ export default function GitLabFlowGuide() {
         브랜치, 코드 리뷰, 배포 흐름을 연결하는 브랜치 전략입니다. 팀의 배포
         방식에 맞춰 적용하는 방법을 알아봅시다.
       </GuideHeader>
-      <Callout id="flow-preparation" title="꼭 GitLab Flow를 사용해야하나요?">
+      <Callout id="flow-preparation" title="꼭 GitLab Flow를 사용해야 하나요?">
         <p>
           GitLab Flow 말고도 Git Flow, GitHub Flow 등 다양한 전략이 있습니다.
           팀에 맞는 전략을 찾아보세요.

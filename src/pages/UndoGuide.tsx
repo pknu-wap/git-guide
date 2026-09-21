@@ -224,7 +224,7 @@ export default function UndoGuide() {
             <li>
               <p>
                 비밀번호 푸시 후 다른 커밋을 푸시했을 때의 상황입니다. 만약
-                비밀번호 커밋이 최상단이라면 Reorder을 하지 않아도 됩니다.{" "}
+                비밀번호 커밋이 최상단이라면 Reorder를 하지 않아도 됩니다.{" "}
                 <strong>History</strong>에서 취소할 커밋을 우클릭하고{" "}
                 <strong>Reorder Commit</strong>을 선택합니다.
               </p>

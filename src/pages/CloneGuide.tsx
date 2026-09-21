@@ -35,7 +35,7 @@ export default function CloneGuide() {
             <p>
               GitHub Desktop을 실행하고 상단 메뉴에서{" "}
               <strong>File → Clone Repository(Ctrl + Shift + O)</strong>를
-              선택하세요.<strong>Clone a Repository</strong> 창에서{" "}
+              선택하세요. <strong>Clone a Repository</strong> 창에서{" "}
               <strong>GitHub.com</strong> 탭을 선택합니다.
             </p>
           </section>

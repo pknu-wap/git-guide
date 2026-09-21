@@ -70,7 +70,7 @@ export default function DevelopmentGuide() {
           </FlowSteps>
           <p>
             파일을 수정할 때 자동으로 커밋이 생기지는 않습니다. 직접
-            커밋해야합니다. 또한, 커밋을 만들어도 푸시하기 전까지는 내
+            커밋해야 합니다. 또한, 커밋을 만들어도 푸시하기 전까지는 내
             컴퓨터에만 남아 있습니다.
           </p>
         </section>
@@ -94,8 +94,8 @@ export default function DevelopmentGuide() {
               첨부하세요.
             </li>
             <li>
-              팀원과 담당자와 작업 범위를 정한 뒤, 작업 브랜치를 만들어 개발을
-              시작하세요.
+              팀원들과 논의해 담당자와 작업 범위를 정한 뒤, 작업 브랜치를 만들어
+              개발을 시작하세요.
             </li>
           </ul>
           <GuideScreenshot
